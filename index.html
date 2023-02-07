@@ -14,19 +14,19 @@
         <h1>Welcome to Tic Tac Toe</h1>
         <p>Get ready to play!</p>
         <!-- uses the built-in onclick attribute to call the resetBoard function -->
-        <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
+        <button onclick="resetBoard(this)" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
       </div>
       <table>
-        <tr id="tr1">
+        <tr class="tr1">
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
           <td id='top-left' onclick="handleClick(this)" ></td>
           <td id='top-middle' onclick="handleClick(this)"></td>
           <td id='top-right' onclick="handleClick(this)"></td>
-        <tr id="tr2">
+        <tr class="tr2">
           <td id='middle-left' onclick="handleClick(this)"></td>
           <td id='middle' onclick="handleClick(this)"></td>
           <td id='middle-right' onclick="handleClick(this)"></td>
-        <tr id="tr3">
+        <tr class="tr3">
           <td id='bottom-left' onclick="handleClick(this)"></td>
           <td id='bottom-middle' onclick="handleClick(this)"></td>
           <td id='bottom-right' onclick="handleClick(this)"></td>
